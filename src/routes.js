@@ -4,8 +4,6 @@ import About from "./pages/About";
 import Menu from "./components/Menu";
 
 function AppRoutes() {
-  const page = window.location.pathname;
-
   return (
     <BrowserRouter>
       <Menu />
