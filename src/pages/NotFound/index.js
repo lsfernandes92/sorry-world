@@ -1,7 +1,11 @@
+import ButtonMain from "components/ButtonMain";
 import styles from "./NotFound.module.css"
 import notFoundImage from "assets/erro_404.png"
+import { useNavigate } from "react-router-dom";
 
 const NotFound = () => {
+  const navigate = useNavigate();
+
   return(
     <>
       <div className={styles.containerContent}>
@@ -17,7 +21,9 @@ const NotFound = () => {
           Aguarde uns instantes e recarregue a página, ou volte para a página inicial.
         </p>
 
-        <div className={styles.backButton}><button>Back</button></div>
+        <div className={styles.backButton} onClick={() => navigate(-1)}>
+          <ButtonMain size="lg">Back</ButtonMain>
+        </div>
         
         <img
           className={styles.dogImage}
