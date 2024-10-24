@@ -36,11 +36,11 @@
 }
  
 @media (max-width: 744px) {
-    .coverImage, .titulo {
+    .coverImage, .title {
         height: 104px;
     }
  
-    .titulo {
+    .title {
         padding: 0 1rem;
         font-size: 2rem;
     }

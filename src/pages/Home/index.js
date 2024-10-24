@@ -1,6 +1,6 @@
 import styles from "pages/Home/Home.module.css"
 import posts from "json/posts.json"
-import Post from "components/Post";
+import Post from "components/PostCard";
 
 const Home = () => {
   return(
